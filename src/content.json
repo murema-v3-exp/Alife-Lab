@@ -1,0 +1,1767 @@
+{
+  "lessons": [
+    {
+      "id": 1,
+      "title": "Life, as it could be",
+      "subtitle": "The big questions behind artificial life",
+      "sections": [
+        {
+          "title": "A different lens",
+          "text": "ALIFE studies the processes that make life possible, including forms that do not occur on Earth. AI focuses on intelligent behaviour; the fields overlap in adaptive agents and learning. A useful test: are you studying life processes, intelligent performance, or both?",
+          "page": 8
+        },
+        {
+          "title": "Three laboratories",
+          "text": "Soft ALIFE uses digital systems, hard ALIFE uses physical robots, and wet ALIFE uses biochemical systems. Strong ALIFE claims an artificial system can literally be alive; weak ALIFE uses models to understand living processes. A successful simulation alone does not settle this philosophical distinction.",
+          "page": 17
+        },
+        {
+          "title": "An ecology inside a computer",
+          "text": "In Tierra, self-replicating programs compete for memory and execution time. Parasites exploit host replication machinery. Adaptation changes the ecological opportunities of other programs: connect this to co-evolution in Lecture 9.",
+          "page": 26
+        },
+        {
+          "title": "Open-ended is a demanding claim",
+          "text": "A long simulation is not sufficient evidence of open-ended evolution. Ask whether heritable variation and selection keep producing new forms and new ecological possibilities, rather than merely repeating behaviours.",
+          "page": 25
+        }
+      ],
+      "recall": "Can something resemble an animal without reproducing or evolving? Explain which ALIFE claim you would be comfortable making.",
+      "source": "2026-CSC4044Z-Lecture 1-Introduction - Copy (2).pdf"
+    },
+    {
+      "id": 2,
+      "title": "Small rules. Complex worlds.",
+      "subtitle": "Cellular automata and Conway\u2019s Game of Life",
+      "sections": [
+        {
+          "title": "Local information, global patterns",
+          "text": "A cellular automaton has a lattice, discrete cell states, a neighbourhood and an update rule. Game of Life uses eight surrounding cells: the Moore neighbourhood. Update all cells simultaneously from the previous generation.",
+          "page": 12
+        },
+        {
+          "title": "B3 / S23",
+          "text": "A dead cell is born with exactly three live neighbours. A live cell survives with two or three. All other cells are dead in the next generation. Try predicting a blinker before pressing Step in the lab.",
+          "page": 12
+        },
+        {
+          "title": "Persistence is not all the same",
+          "text": "A block is a still life, a blinker an oscillator, and a glider translates across the lattice. Pattern names describe outcomes of local rules; cells do not know the global pattern.",
+          "page": 13
+        },
+        {
+          "title": "Replication needs interpretation",
+          "text": "Crystal growth and prion propagation illustrate replication of patterns. They are not automatically equivalent to a general constructor reproducing its inherited organisation. Separate a demonstrated mechanism from a claim about life.",
+          "page": 7
+        }
+      ],
+      "recall": "Why would updating cells one at a time in place change the model?",
+      "source": "2026-CSC4044Z-Lecture 2-GOL.pdf"
+    },
+    {
+      "id": 3,
+      "title": "Behaviour without a blueprint",
+      "subtitle": "Agents, Braitenberg vehicles and emergence",
+      "sections": [
+        {
+          "title": "Sense \u2192 act, or sense \u2192 plan \u2192 act?",
+          "text": "Reactive agents map current sensory input to actions. Deliberative agents maintain a world model and plan. A complex-looking trajectory alone does not establish deliberation, cognition or learning.",
+          "page": 16
+        },
+        {
+          "title": "Braitenberg\u2019s thought experiment",
+          "text": "Simple sensor-to-motor wiring can produce behaviour observers describe as fear, aggression, love or exploration. Excitatory versus inhibitory connections and crossed versus uncrossed wiring change turning behaviour. Explain the circuit before assigning an emotion.",
+          "page": 28
+        },
+        {
+          "title": "Function and interpretation",
+          "text": "A functional description specifies how sensor values determine motors. An ethological description names the observed behaviour. Braitenberg vehicles expose how easily observers infer complex internal causes from simple functional mechanisms.",
+          "page": 37
+        },
+        {
+          "title": "From individuals to collectives",
+          "text": "Biomimicry takes inspiration from biological forms or processes. Emergence describes macro patterns arising from component interactions. Neither appearance alone nor a complicated animation proves life, intelligence or open-ended evolution.",
+          "page": 45
+        }
+      ],
+      "recall": "If two sensors return the same value, will symmetric motor wiring produce a turn? What breaks the symmetry?",
+      "source": "2026-CSC4044Z-Lecture 3-Introduction(II) - Copy (1).pdf"
+    },
+    {
+      "id": 4,
+      "title": "The collective takes shape",
+      "subtitle": "Boids, stigmergy and agent-based models",
+      "sections": [
+        {
+          "title": "Build the mechanism first",
+          "text": "An ABM specifies agents, states, an environment and interaction rules. Its value comes from testing whether local mechanisms generate a collective pattern, not merely making a convincing animation.",
+          "page": 4
+        },
+        {
+          "title": "Three steering tendencies",
+          "text": "Separation steers away from close neighbours. Alignment steers toward local average heading or velocity. Cohesion steers toward local average position. The balance of these tendencies gives flocking; change weights and radii to test the result.",
+          "page": 13
+        },
+        {
+          "title": "Stigmergy: leave a trace",
+          "text": "Agents can coordinate through a shared environmental structure. A construction or pheromone trace changes what subsequent agents sense and do. This connects nest construction with distributed coordination without a blueprint.",
+          "page": 6
+        },
+        {
+          "title": "The cybernetic wasteland",
+          "text": "The lecturer\u2019s cybernetic wasteland concern is specific: societal ABMs can contain pre-programmed rational agents that react to environmental pressures but lack psychological, emotional and personality traits. This can omit mechanisms behind human decisions. Compare explicit behavioural hypotheses and validate them against evidence; historical psychological states are particularly hard to establish.",
+          "page": 41
+        }
+      ],
+      "recall": "If cohesion is high and separation is zero, what pattern do you predict? Test it in the Boids lab.",
+      "source": "2026-CSC4044Z-Lecture 4-ABMs - Copy.pdf"
+    },
+    {
+      "id": 5,
+      "title": "How a neighbourhood tips",
+      "subtitle": "Schelling\u2019s model and phase transitions",
+      "sections": [
+        {
+          "title": "Local satisfaction",
+          "text": "An agent is happy when the proportion of occupied neighbours of the same group meets its threshold. Vacant cells do not enter that fraction. Specify what happens for an isolated agent; our lab treats it as satisfied.",
+          "page": 8
+        },
+        {
+          "title": "Tolerance can still yield clustering",
+          "text": "A preference for roughly one-third similar neighbours can produce substantial clustering under the illustrated settings. This is not a universal threshold: density, neighbourhood, group ratios and move rules matter.",
+          "page": 18
+        },
+        {
+          "title": "Run an experiment",
+          "text": "Begin mixed, measure satisfaction and clustering, then change one parameter. Repeat with fresh initial conditions. Outcomes depend on stochastic movement and finite boundaries; a single run is an observation, not a theorem.",
+          "page": 12
+        },
+        {
+          "title": "Useful and limited",
+          "text": "Schelling\u2019s model isolates a mechanism for self-organisation. It omits many economic, institutional and historical forces. A tipping point in a model is a hypothesis-generating result, not a complete causal account of a city.",
+          "page": 27
+        }
+      ],
+      "recall": "Could every agent tolerate a majority of unlike neighbours while the city still clusters? Explain the feedback.",
+      "source": "2026-CSC4044Z-Lecture 5-ABMs(II) - Copy (2).pdf"
+    },
+    {
+      "id": 6,
+      "title": "Evolution as a search engine",
+      "subtitle": "Representations, fitness and the EA loop",
+      "sections": [
+        {
+          "title": "Encode, evaluate, vary",
+          "text": "An EA maintains a population of encoded solutions. Decode genotypes into testable phenotypes, evaluate fitness, select parents, create variation and choose survivors. Parent selection and survivor selection answer different questions.",
+          "page": 26
+        },
+        {
+          "title": "Representation shapes possibility",
+          "text": "Binary strings, real vectors, trees and graphs imply different search spaces and valid operators. Selection acts on evaluated phenotypic performance while inherited representations are varied. An unsuitable encoding can make useful solutions hard to reach.",
+          "page": 14
+        },
+        {
+          "title": "Guided stochastic search",
+          "text": "Mutation and recombination propose candidates. Selection biases which candidates contribute. Randomness is guided by evaluation; it does not guarantee monotonic improvement or a global optimum in a finite run.",
+          "page": 29
+        },
+        {
+          "title": "A landscape is a model",
+          "text": "A fitness landscape relates encoded configurations to fitness under a chosen neighbourhood. Ruggedness, multiple optima and variable interactions can make search difficult. In co-evolution the landscape itself changes as other populations adapt.",
+          "page": 18
+        }
+      ],
+      "recall": "Why can changing an encoding change which mutations are small?",
+      "source": "2026-CSC4044Z-Lecture 6-ES(I) - Copy (1).pdf"
+    },
+    {
+      "id": 7,
+      "title": "Variation and survival",
+      "subtitle": "Mutation, recombination and selection",
+      "sections": [
+        {
+          "title": "Mutation opens possibilities",
+          "text": "Mutation is unary: it modifies one parent. A bit-flip mutation changes each bit independently with probability pm in the standard bitwise version. For L bits the expected number of flips is Lpm; expectation is not an observed count.",
+          "page": 25
+        },
+        {
+          "title": "Crossover mixes inherited material",
+          "text": "One-point crossover cuts two compatible strings at the same position and exchanges suffixes. It can produce fitter or weaker children. It cannot invent an allele absent from both parents at the same locus.",
+          "page": 24
+        },
+        {
+          "title": "Two kinds of selection",
+          "text": "Parent selection chooses contributors to reproduction. Survivor selection decides who enters the next population. Full generational replacement can discard the best parent; elitism retains selected best individuals.",
+          "page": 7
+        },
+        {
+          "title": "Roulette is probabilistic",
+          "text": "For nonnegative fitness values with positive total, pi = fi / \u03a3f. In m independent draws the expected count is mpi. The actual count is an integer and can differ greatly from its expectation.",
+          "page": 22
+        }
+      ],
+      "recall": "If a genotype has probability 0.4, is it guaranteed two copies in five draws?",
+      "source": "2026-CSC4044Z-Lecture 7-ES(II) - Copy (1).pdf"
+    },
+    {
+      "id": 8,
+      "title": "A genetic algorithm, under the lens",
+      "subtitle": "Worked arithmetic, landscapes and replacement",
+      "sections": [
+        {
+          "title": "Walk through the worked example",
+          "text": "For x\u00b2 on integers 0\u202631, five bits encode x. The initial values 13, 24, 8 and 19 have fitness 169, 576, 64 and 361: total 1170 and mean 292.5. Expected roulette copies equal 4fi/1170; observed copies need not match.",
+          "page": 6
+        },
+        {
+          "title": "Read the arithmetic critically",
+          "text": "The shown mutated strings 11100, 11001, 11011 and 10010 decode to 28, 25, 27 and 18. Their fitness total is 2462 and mean 615.5. Lecture 8 notes discuss inconsistent per-genotype and per-bit mutation interpretations: explicitly state which model you calculate with.",
+          "page": 8
+        },
+        {
+          "title": "Replacement has a fraction",
+          "text": "Generation gap = number replaced / population size. Generational replacement gives 1; a small steady-state update gives a small fraction. Full replacement alone does not preserve the best candidate.",
+          "page": 28
+        },
+        {
+          "title": "Landscapes and mixing bias",
+          "text": "The standard sphere \u03a3xj\u00b2 is smooth, convex, separable, unimodal and well conditioned. Nonlinear does not imply rugged. One-point crossover depends on gene order; uniform crossover independently samples parental sources at each locus.",
+          "page": 14
+        }
+      ],
+      "recall": "For parents 0000 and 1111, can one-point crossover produce 0101? Can uniform crossover?",
+      "source": "2026-CSC4044Z-Lecture 8-ES(III) - Copy (1).pdf"
+    },
+    {
+      "id": 9,
+      "title": "Who gets to reproduce?",
+      "subtitle": "Ranking, tournament selection and co-evolution",
+      "sections": [
+        {
+          "title": "Rank instead of magnitude",
+          "text": "Rank 1 is worst and rank N best. Linear ranking uses p(i) = [n\u2212 +(n+ \u2212 n\u2212)(i\u22121)/(N\u22121)]/N, with n\u2212 = 2\u2212n+ and 1\u2264n+\u22642. It depends on ordering rather than raw score differences.",
+          "page": 6
+        },
+        {
+          "title": "Tournament size is a pressure dial",
+          "text": "Sample k candidates and select the fittest. Increasing k favours high ranks, usually increasing selection intensity and loss of diversity. Sampling with or without replacement changes exact probabilities: state your convention.",
+          "page": 11
+        },
+        {
+          "title": "Three quantities, three definitions",
+          "text": "Selection intensity measures the increase of mean fitness after selection. Loss of diversity is the proportion of genotypes not selected per generation. Selection variance is the normalised variance of fitness after selection; it is not the variance in copy counts across trials.",
+          "page": 14
+        },
+        {
+          "title": "When the opponent changes the task",
+          "text": "Co-evolution couples fitness landscapes. Adaptation in one population changes what succeeds in the other. Competitive and cooperative co-evolution differ in how participants contribute to the evaluation; the Red Queen effect can hide change behind stable relative success.",
+          "page": 17
+        }
+      ],
+      "recall": "Why can fitness variance approach zero while the mean selected fitness increases?",
+      "source": "2026-CSC4044Z-Lecture 9-ES(IV) - Copy (2).pdf"
+    },
+    {
+      "id": 10,
+      "title": "Evolving bodies and opponents",
+      "subtitle": "Sims\u2019 creatures and robotic ALIFE",
+      "sections": [
+        {
+          "title": "A graph becomes a body",
+          "text": "Sims\u2019 creature genotype is a variable-length directed graph describing body parts and associated control. Evolution can change morphology and controller together: representation determines what bodies can be constructed.",
+          "page": 3
+        },
+        {
+          "title": "Evaluation against another organism",
+          "text": "In competitive co-evolution, a candidate\u2019s score depends on opponents. Changing opponents can reverse which candidate is best. Testing against a fixed archive can help distinguish progress from cycling or overspecialisation.",
+          "page": 11
+        },
+        {
+          "title": "Robot, android, organism?",
+          "text": "A robot is a physical machine capable of acting; an android has human form. Hard ALIFE uses robotic systems to investigate life-like organisation or behaviour. Human resemblance alone does not establish cognition or literal life.",
+          "page": 19
+        },
+        {
+          "title": "Cognition is task dependent",
+          "text": "Simple reactive or passive physical systems can generate life-like behaviour. Some interaction tasks require richer modelling of others. Start with the task and demonstrated mechanism rather than inferring cognition from appearance.",
+          "page": 25
+        }
+      ],
+      "recall": "What would you measure to distinguish a general improvement from merely beating the current opponent?",
+      "source": "2026-CSC4044Z-Lecture 10-Coevol - Copy (1).pdf"
+    },
+    {
+      "id": 11,
+      "title": "When machines feel almost human",
+      "subtitle": "Morphological computation and the uncanny valley",
+      "sections": [
+        {
+          "title": "The body participates",
+          "text": "Morphological computation describes physical body properties doing work that would otherwise require explicit control computation. Compliance, shape and passive dynamics can simplify control. It is a useful mechanism, not a requirement for all life-like behaviour.",
+          "page": 8
+        },
+        {
+          "title": "An almost-human dip",
+          "text": "The uncanny valley hypothesis describes negative reactions to some nearly human agents. Do not assume everyone experiences it, or that human likeness has a single objective scale. Appearance, movement and context can interact.",
+          "page": 27
+        },
+        {
+          "title": "Separate competing explanations",
+          "text": "Anomaly recognition concerns features that violate expectations. Perceptual tension concerns conflicting cues, such as human appearance with unnatural movement. Vary appearance and motion independently to distinguish these hypotheses.",
+          "page": 30
+        },
+        {
+          "title": "Design for evidence",
+          "text": "Use comparison conditions, counterbalance presentation order and measure reported eeriness or affinity. Keep lighting, task and dialogue comparable. A convincing design predicts different outcomes under competing explanations.",
+          "page": 31
+        }
+      ],
+      "recall": "How would you isolate an unnatural facial feature from an unnatural motion pattern?",
+      "source": "2026-CSC4044Z-Lecture 11-ROB - Copy.pdf"
+    },
+    {
+      "id": 12,
+      "title": "The uncanny, in the wild",
+      "subtitle": "Bonus source: field studies and research limits",
+      "sections": [
+        {
+          "title": "Beyond a controlled laboratory",
+          "text": "The additional Lecture 12 deck describes unscripted encounters with an android in a caf\u00e9. Field context improves ecological relevance while reducing control over participants and prior expectations.",
+          "page": 5
+        },
+        {
+          "title": "What did the sample capture?",
+          "text": "Only participants agreeing to interviews entered the video evaluation. This may introduce selection bias. Unprompted comments and explicitly elicited feelings are different kinds of evidence.",
+          "page": 13
+        },
+        {
+          "title": "Connect back to the beginning",
+          "text": "Robotics experiments, ABMs and digital evolution all ask whether a mechanism explains an observation. Identify the research question, implementation medium, evidence and limitations before making claims about life or cognition.",
+          "page": 19
+        }
+      ],
+      "recall": "How might people who decline an interview differ from those who agree?",
+      "source": "2026-CSC4044Z-Lecture 12-ROB.pdf"
+    }
+  ],
+  "questions": [
+    {
+      "id": "L1-01",
+      "lecture": 1,
+      "topic": "Foundations",
+      "type": "mcq",
+      "text": "Which investigation is an example of wet ALIFE?",
+      "answer": "A synthetic chemical protocell",
+      "explanation": "Wet ALIFE studies biochemical implementations; soft and hard refer to digital and robotic systems.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 1-Introduction - Copy (2).pdf",
+        "page": 18
+      },
+      "category": "original practice",
+      "marks": 2,
+      "difficulty": "core",
+      "options": [
+        "A synthetic chemical protocell",
+        "A Boids simulation",
+        "A walking robot",
+        "A digital parasite"
+      ],
+      "hint": "Wet ALIFE studies biochemical implementations; soft and hard refer to digital and robotic systems.",
+      "rubric": [],
+      "mistakes": "Distinguish the mechanism from the observed result. State assumptions and justify each claim."
+    },
+    {
+      "id": "L1-02",
+      "lecture": 1,
+      "topic": "Foundations",
+      "type": "matching",
+      "text": "Match each ALIFE approach to its medium.",
+      "answer": [
+        "Digital systems",
+        "Physical robots",
+        "Biochemical systems"
+      ],
+      "explanation": "Soft, hard and wet are implementation media, not levels of intelligence.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 1-Introduction - Copy (2).pdf",
+        "page": 18
+      },
+      "category": "original practice",
+      "marks": 2,
+      "difficulty": "core",
+      "options": [
+        "Soft",
+        "Hard",
+        "Wet"
+      ],
+      "hint": "Soft, hard and wet are implementation media, not levels of intelligence.",
+      "rubric": [],
+      "mistakes": "Distinguish the mechanism from the observed result. State assumptions and justify each claim."
+    },
+    {
+      "id": "L1-03",
+      "lecture": 1,
+      "topic": "Foundations",
+      "type": "written",
+      "text": "Compare AI and ALIFE and propose a research question at their intersection.",
+      "answer": "AI studies intelligent behaviour; ALIFE studies life processes; Adaptive robotic agents can investigate learning and evolution together",
+      "explanation": "Credit the distinction and a justified overlap, rather than treating the disciplines as mutually exclusive.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 1-Introduction - Copy (2).pdf",
+        "page": 12
+      },
+      "category": "slide question",
+      "marks": 3,
+      "difficulty": "core",
+      "options": [],
+      "hint": "Credit the distinction and a justified overlap, rather than treating the disciplines as mutually exclusive.",
+      "rubric": [
+        "AI studies intelligent behaviour",
+        "ALIFE studies life processes",
+        "Adaptive robotic agents can investigate learning and evolution together"
+      ],
+      "mistakes": "Do not equate human-like appearance with life. Strong and weak ALIFE describe claims about what the system is, not good and bad implementations."
+    },
+    {
+      "id": "L1-04",
+      "lecture": 1,
+      "topic": "Digital evolution",
+      "type": "truefalse",
+      "text": "A fixed collection of reactive controllers running forever is sufficient evidence of open-ended evolution.",
+      "answer": "False",
+      "explanation": "Infinite runtime does not supply heredity, variation, selection or sustained novelty.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 1-Introduction - Copy (2).pdf",
+        "page": 25
+      },
+      "category": "mock-inspired",
+      "marks": 2,
+      "difficulty": "core",
+      "options": [],
+      "hint": "Infinite runtime does not supply heredity, variation, selection or sustained novelty.",
+      "rubric": [],
+      "mistakes": "Distinguish the mechanism from the observed result. State assumptions and justify each claim."
+    },
+    {
+      "id": "L1-05",
+      "lecture": 1,
+      "topic": "Foundations",
+      "type": "written",
+      "text": "Distinguish strong and weak ALIFE using a digital organism as an example.",
+      "answer": "Strong ALIFE claims the organism can be literally alive; Weak ALIFE treats it as a useful model of life; Simulating replication alone does not resolve the distinction",
+      "explanation": "These are interpretations of artificial life, not measures of simulation quality.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 1-Introduction - Copy (2).pdf",
+        "page": 17
+      },
+      "category": "original practice",
+      "marks": 3,
+      "difficulty": "core",
+      "options": [],
+      "hint": "These are interpretations of artificial life, not measures of simulation quality.",
+      "rubric": [
+        "Strong ALIFE claims the organism can be literally alive",
+        "Weak ALIFE treats it as a useful model of life",
+        "Simulating replication alone does not resolve the distinction"
+      ],
+      "mistakes": "Do not equate human-like appearance with life. Strong and weak ALIFE describe claims about what the system is, not good and bad implementations."
+    },
+    {
+      "id": "L2-01",
+      "lecture": 2,
+      "topic": "Game of Life",
+      "type": "multiselect",
+      "text": "Select every condition under which a cell is alive in the next Game of Life generation.",
+      "answer": [
+        "Dead with 3 neighbours",
+        "Alive with 2 neighbours",
+        "Alive with 3 neighbours"
+      ],
+      "explanation": "Apply B3/S23 to the previous generation simultaneously.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 2-GOL.pdf",
+        "page": 12
+      },
+      "category": "original practice",
+      "marks": 2,
+      "difficulty": "core",
+      "options": [
+        "Dead with 3 neighbours",
+        "Alive with 2 neighbours",
+        "Alive with 3 neighbours",
+        "Alive with 4 neighbours"
+      ],
+      "hint": "Apply B3/S23 to the previous generation simultaneously.",
+      "rubric": [],
+      "mistakes": "Distinguish the mechanism from the observed result. State assumptions and justify each claim."
+    },
+    {
+      "id": "L2-02",
+      "lecture": 2,
+      "topic": "Game of Life",
+      "type": "numeric",
+      "text": "A live cell has five living Moore neighbours. What is its next state? Enter 0 or 1.",
+      "answer": 0,
+      "explanation": "Five neighbours causes overcrowding: the next state is 0.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 2-GOL.pdf",
+        "page": 12
+      },
+      "category": "original practice",
+      "marks": 2,
+      "difficulty": "core",
+      "options": [],
+      "hint": "Five neighbours causes overcrowding: the next state is 0.",
+      "rubric": [],
+      "mistakes": "Distinguish the mechanism from the observed result. State assumptions and justify each claim."
+    },
+    {
+      "id": "L2-03",
+      "lecture": 2,
+      "topic": "Game of Life",
+      "type": "fill",
+      "text": "The eight surrounding cells form the ____ neighbourhood.",
+      "answer": "Moore",
+      "explanation": "The Moore neighbourhood includes orthogonal and diagonal neighbours.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 2-GOL.pdf",
+        "page": 12
+      },
+      "category": "original practice",
+      "marks": 2,
+      "difficulty": "core",
+      "options": [],
+      "hint": "The Moore neighbourhood includes orthogonal and diagonal neighbours.",
+      "rubric": [],
+      "mistakes": "Distinguish the mechanism from the observed result. State assumptions and justify each claim."
+    },
+    {
+      "id": "L2-04",
+      "lecture": 2,
+      "topic": "Game of Life",
+      "type": "written",
+      "text": "Explain how a glider illustrates emergence without a central controller.",
+      "answer": "Each cell follows the same local rule; Coordinated updates generate a persistent translating pattern; No cell represents or directs the glider",
+      "explanation": "Link the local mechanism to the global observed behaviour.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 2-GOL.pdf",
+        "page": 13
+      },
+      "category": "original practice",
+      "marks": 3,
+      "difficulty": "core",
+      "options": [],
+      "hint": "Link the local mechanism to the global observed behaviour.",
+      "rubric": [
+        "Each cell follows the same local rule",
+        "Coordinated updates generate a persistent translating pattern",
+        "No cell represents or directs the glider"
+      ],
+      "mistakes": "Do not say a cell plans a glider trajectory. The global pattern follows synchronous local updates; in-place sequential updates define a different system."
+    },
+    {
+      "id": "L3-01",
+      "lecture": 3,
+      "topic": "Braitenberg vehicles",
+      "type": "mcq",
+      "text": "Which evidence directly supports a reactive controller interpretation?",
+      "answer": "Motor commands are computed from current sensor readings",
+      "explanation": "The sense\u2013act mapping is the mechanism; observers may still describe emotional behaviour.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 3-Introduction(II) - Copy (1).pdf",
+        "page": 29
+      },
+      "category": "mock-inspired",
+      "marks": 2,
+      "difficulty": "core",
+      "options": [
+        "Motor commands are computed from current sensor readings",
+        "It looks frightened",
+        "It has wheels",
+        "It runs for a long time"
+      ],
+      "hint": "The sense\u2013act mapping is the mechanism; observers may still describe emotional behaviour.",
+      "rubric": [],
+      "mistakes": "Distinguish the mechanism from the observed result. State assumptions and justify each claim."
+    },
+    {
+      "id": "L3-02",
+      "lecture": 3,
+      "topic": "Agents",
+      "type": "matching",
+      "text": "Match the controller to its defining mechanism.",
+      "answer": [
+        "Current stimulus to action",
+        "World model and planning",
+        "Experience changes behaviour"
+      ],
+      "explanation": "Reactive, deliberative and learning describe mechanisms, and can be combined in real systems.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 3-Introduction(II) - Copy (1).pdf",
+        "page": 15
+      },
+      "category": "original practice",
+      "marks": 2,
+      "difficulty": "core",
+      "options": [
+        "Reactive",
+        "Deliberative",
+        "Learning"
+      ],
+      "hint": "Reactive, deliberative and learning describe mechanisms, and can be combined in real systems.",
+      "rubric": [],
+      "mistakes": "Distinguish the mechanism from the observed result. State assumptions and justify each claim."
+    },
+    {
+      "id": "L3-03",
+      "lecture": 3,
+      "topic": "Braitenberg vehicles",
+      "type": "written",
+      "text": "A vehicle approaches a lamp and is described as aggressive. Distinguish a functional account from an ethological account.",
+      "answer": "Functional account gives sensor motor mappings and wiring; Ethological account describes observed aggression or approach; An observer label does not demonstrate an emotional internal state",
+      "explanation": "Justify the two descriptions using the same vehicle.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 3-Introduction(II) - Copy (1).pdf",
+        "page": 37
+      },
+      "category": "mock-inspired",
+      "marks": 3,
+      "difficulty": "core",
+      "options": [],
+      "hint": "Justify the two descriptions using the same vehicle.",
+      "rubric": [
+        "Functional account gives sensor motor mappings and wiring",
+        "Ethological account describes observed aggression or approach",
+        "An observer label does not demonstrate an emotional internal state"
+      ],
+      "mistakes": "Do not infer emotions or deliberation from observer descriptions. Specify the sensor\u2013motor mapping and address symmetry when input readings are equal."
+    },
+    {
+      "id": "L3-04",
+      "lecture": 3,
+      "topic": "Emergence",
+      "type": "written",
+      "text": "Compare emergence in Boids and Game of Life.",
+      "answer": "Boids use local steering interactions; Game of Life uses local cellular state transitions; Flocking and translating patterns are collective outcomes without central blueprints",
+      "explanation": "Use the mechanism\u2013outcome link in both examples.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 3-Introduction(II) - Copy (1).pdf",
+        "page": 48
+      },
+      "category": "original practice",
+      "marks": 3,
+      "difficulty": "core",
+      "options": [],
+      "hint": "Use the mechanism\u2013outcome link in both examples.",
+      "rubric": [
+        "Boids use local steering interactions",
+        "Game of Life uses local cellular state transitions",
+        "Flocking and translating patterns are collective outcomes without central blueprints"
+      ],
+      "mistakes": "Do not describe only the outcome. State the local rules and explain how their interaction produces the global pattern."
+    },
+    {
+      "id": "L3-05",
+      "lecture": 3,
+      "topic": "Agents",
+      "type": "truefalse",
+      "text": "Complex-looking behaviour necessarily implies an internal world model.",
+      "answer": "False",
+      "explanation": "Reactive sensor\u2013motor coupling can generate complex-looking behaviour.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 3-Introduction(II) - Copy (1).pdf",
+        "page": 16
+      },
+      "category": "original practice",
+      "marks": 2,
+      "difficulty": "core",
+      "options": [],
+      "hint": "Reactive sensor\u2013motor coupling can generate complex-looking behaviour.",
+      "rubric": [],
+      "mistakes": "Distinguish the mechanism from the observed result. State assumptions and justify each claim."
+    },
+    {
+      "id": "L4-01",
+      "lecture": 4,
+      "topic": "Boids",
+      "type": "matching",
+      "text": "Match each Boids rule to its steering target.",
+      "answer": [
+        "Away from close neighbours",
+        "Average local heading",
+        "Average local position"
+      ],
+      "explanation": "These distinct local steering rules combine to produce flocking.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 4-ABMs - Copy.pdf",
+        "page": 13
+      },
+      "category": "mock-inspired",
+      "marks": 3,
+      "difficulty": "core",
+      "options": [
+        "Separation",
+        "Alignment",
+        "Cohesion"
+      ],
+      "hint": "These distinct local steering rules combine to produce flocking.",
+      "rubric": [],
+      "mistakes": "Distinguish the mechanism from the observed result. State assumptions and justify each claim."
+    },
+    {
+      "id": "L4-02",
+      "lecture": 4,
+      "topic": "Boids",
+      "type": "written",
+      "text": "Describe the three Boids rules and predict a consequence of removing separation.",
+      "answer": "Separation avoids close neighbours; Alignment matches local heading; Cohesion attracts toward local centre; Without separation agents can crowd or overlap",
+      "explanation": "One mark per rule and one for a justified prediction.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 4-ABMs - Copy.pdf",
+        "page": 13
+      },
+      "category": "mock-inspired",
+      "marks": 4,
+      "difficulty": "challenging",
+      "options": [],
+      "hint": "One mark per rule and one for a justified prediction.",
+      "rubric": [
+        "Separation avoids close neighbours",
+        "Alignment matches local heading",
+        "Cohesion attracts toward local centre",
+        "Without separation agents can crowd or overlap"
+      ],
+      "mistakes": "Do not swap alignment and cohesion: alignment concerns heading, cohesion concerns position. State that neighbours are local rather than assuming a global flock controller."
+    },
+    {
+      "id": "L4-03",
+      "lecture": 4,
+      "topic": "ABM validation",
+      "type": "written",
+      "text": "A city ABM recreates a plausible wealth distribution. Explain why this alone is weak validation.",
+      "answer": "Different mechanisms can produce similar outputs; Rational agents may omit personality emotion and social motivations; Compare explicit behavioural assumptions against evidence; Test sensitivity and alternative explanations",
+      "explanation": "The lecturer\u2019s specific cybernetic wasteland critique concerns rational but psychologically empty agents. Matching an aggregate outcome does not show that the model captures human motives or decisions.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 4-ABMs - Copy.pdf",
+        "page": 41
+      },
+      "category": "mock-inspired",
+      "marks": 4,
+      "difficulty": "challenging",
+      "options": [],
+      "hint": "Connect the cybernetic wasteland concern to explanation and validation.",
+      "rubric": [
+        "Different mechanisms can produce similar outputs",
+        "Rational agents may omit personality emotion and social motivations",
+        "Compare explicit behavioural assumptions against evidence",
+        "Test sensitivity and alternative explanations"
+      ],
+      "mistakes": "A plausible animation or matching one statistic is not validation of a causal mechanism. Consider alternative rules and the missing psychological assumptions."
+    },
+    {
+      "id": "L4-04",
+      "lecture": 4,
+      "topic": "Stigmergy",
+      "type": "mcq",
+      "text": "Which interaction is stigmergic?",
+      "answer": "A builder responds to material left by other builders",
+      "explanation": "Coordination occurs through a changed environment.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 4-ABMs - Copy.pdf",
+        "page": 6
+      },
+      "category": "original practice",
+      "marks": 2,
+      "difficulty": "core",
+      "options": [
+        "A builder responds to material left by other builders",
+        "A leader broadcasts a complete blueprint",
+        "An agent plans in isolation",
+        "A global controller positions every agent"
+      ],
+      "hint": "Coordination occurs through a changed environment.",
+      "rubric": [],
+      "mistakes": "Distinguish the mechanism from the observed result. State assumptions and justify each claim."
+    },
+    {
+      "id": "L4-05",
+      "lecture": 4,
+      "topic": "Boids",
+      "type": "truefalse",
+      "text": "A Boid must know the position of every individual in the entire flock.",
+      "answer": "False",
+      "explanation": "The rules use local neighbourhood information.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 4-ABMs - Copy.pdf",
+        "page": 13
+      },
+      "category": "original practice",
+      "marks": 2,
+      "difficulty": "core",
+      "options": [],
+      "hint": "The rules use local neighbourhood information.",
+      "rubric": [],
+      "mistakes": "Distinguish the mechanism from the observed result. State assumptions and justify each claim."
+    },
+    {
+      "id": "L5-01",
+      "lecture": 5,
+      "topic": "Schelling",
+      "type": "numeric",
+      "text": "An agent has 2 same-group neighbours, 3 other-group neighbours and 3 vacant neighbours. What percentage are similar?",
+      "answer": 40,
+      "explanation": "Vacancies are excluded: 2/(2+3) \u00d7 100 = 40%.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 5-ABMs(II) - Copy (2).pdf",
+        "page": 8
+      },
+      "category": "original practice",
+      "marks": 2,
+      "difficulty": "core",
+      "options": [],
+      "hint": "Vacancies are excluded: 2/(2+3) \u00d7 100 = 40%.",
+      "rubric": [],
+      "mistakes": "Distinguish the mechanism from the observed result. State assumptions and justify each claim."
+    },
+    {
+      "id": "L5-02",
+      "lecture": 5,
+      "topic": "Schelling",
+      "type": "truefalse",
+      "text": "A similarity threshold of one-third means each agent demands a majority of same-group neighbours.",
+      "answer": "False",
+      "explanation": "One-third is a minority; local tolerant preferences can still produce segregation.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 5-ABMs(II) - Copy (2).pdf",
+        "page": 18
+      },
+      "category": "original practice",
+      "marks": 2,
+      "difficulty": "core",
+      "options": [],
+      "hint": "One-third is a minority; local tolerant preferences can still produce segregation.",
+      "rubric": [],
+      "mistakes": "Distinguish the mechanism from the observed result. State assumptions and justify each claim."
+    },
+    {
+      "id": "L5-03",
+      "lecture": 5,
+      "topic": "Schelling",
+      "type": "written",
+      "text": "Design a test of the effect of similarity preference on clustering.",
+      "answer": "Vary similarity threshold; Hold density group ratio neighbourhood and movement rules fixed; Repeat random initialisations; Measure clustering and satisfaction and report variability",
+      "explanation": "Separate the independent variable, controls and measured outcome.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 5-ABMs(II) - Copy (2).pdf",
+        "page": 12
+      },
+      "category": "original practice",
+      "marks": 4,
+      "difficulty": "challenging",
+      "options": [],
+      "hint": "Separate the independent variable, controls and measured outcome.",
+      "rubric": [
+        "Vary similarity threshold",
+        "Hold density group ratio neighbourhood and movement rules fixed",
+        "Repeat random initialisations",
+        "Measure clustering and satisfaction and report variability"
+      ],
+      "mistakes": "Do not count empty cells as other-group agents. High satisfaction is not the same measurement as clustering, and the illustrative one-third threshold is not universal."
+    },
+    {
+      "id": "L5-04",
+      "lecture": 5,
+      "topic": "ABM validation",
+      "type": "written",
+      "text": "Why should Schelling\u2019s model not be treated as a complete explanation of real residential segregation?",
+      "answer": "It abstracts away economic and institutional constraints; Outcomes depend on model rules and parameters; Validate against evidence and compare alternative mechanisms",
+      "explanation": "Use the model to investigate a mechanism rather than claim universal causality.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 5-ABMs(II) - Copy (2).pdf",
+        "page": 28
+      },
+      "category": "original practice",
+      "marks": 3,
+      "difficulty": "core",
+      "options": [],
+      "hint": "Use the model to investigate a mechanism rather than claim universal causality.",
+      "rubric": [
+        "It abstracts away economic and institutional constraints",
+        "Outcomes depend on model rules and parameters",
+        "Validate against evidence and compare alternative mechanisms"
+      ],
+      "mistakes": "A plausible animation or matching one statistic is not validation of a causal mechanism. Consider alternative rules and the missing psychological assumptions."
+    },
+    {
+      "id": "L6-01",
+      "lecture": 6,
+      "topic": "EA fundamentals",
+      "type": "matching",
+      "text": "Match each EA component to its role.",
+      "answer": [
+        "Inherited encoding",
+        "Realised testable solution",
+        "Quality evaluation"
+      ],
+      "explanation": "Separate the stored description from its expressed performance.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 6-ES(I) - Copy (1).pdf",
+        "page": 14
+      },
+      "category": "original practice",
+      "marks": 2,
+      "difficulty": "core",
+      "options": [
+        "Genotype",
+        "Phenotype",
+        "Fitness function"
+      ],
+      "hint": "Separate the stored description from its expressed performance.",
+      "rubric": [],
+      "mistakes": "Distinguish the mechanism from the observed result. State assumptions and justify each claim."
+    },
+    {
+      "id": "L6-02",
+      "lecture": 6,
+      "topic": "EA fundamentals",
+      "type": "multiselect",
+      "text": "Which are standard components of an EA?",
+      "answer": [
+        "Population",
+        "Variation",
+        "Evaluation",
+        "Selection"
+      ],
+      "explanation": "A population is evaluated, selected and varied; exhaustive search is not required.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 6-ES(I) - Copy (1).pdf",
+        "page": 26
+      },
+      "category": "original practice",
+      "marks": 2,
+      "difficulty": "core",
+      "options": [
+        "Population",
+        "Variation",
+        "Evaluation",
+        "Selection",
+        "Exhaustive enumeration"
+      ],
+      "hint": "A population is evaluated, selected and varied; exhaustive search is not required.",
+      "rubric": [],
+      "mistakes": "Distinguish the mechanism from the observed result. State assumptions and justify each claim."
+    },
+    {
+      "id": "L6-03",
+      "lecture": 6,
+      "topic": "EA fundamentals",
+      "type": "written",
+      "text": "Give conditions for eventual optimal discovery and explain why they do not guarantee a finite practical runtime.",
+      "answer": "A finite search space and variation with nonzero reachability of every solution; Unlimited repeated opportunities under appropriate independent or persistent sampling assumptions; Discovery probability tends to one rather than a fixed finite time guarantee; Retaining the optimum needs an archive or elitism",
+      "explanation": "A probabilistic eventual result needs reachability assumptions. Do not promise an optimum from an arbitrary EA.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 6-ES(I) - Copy (1).pdf",
+        "page": 29
+      },
+      "category": "mock-inspired",
+      "marks": 4,
+      "difficulty": "challenging",
+      "options": [],
+      "hint": "A probabilistic eventual result needs reachability assumptions.",
+      "rubric": [
+        "A finite search space and variation with nonzero reachability of every solution",
+        "Unlimited repeated opportunities under appropriate independent or persistent sampling assumptions",
+        "Discovery probability tends to one rather than a fixed finite time guarantee",
+        "Retaining the optimum needs an archive or elitism"
+      ],
+      "mistakes": "Do not promise a finite-time global optimum. Separate a nonzero chance of reaching an optimum from retaining it, and separate best current from best-ever fitness."
+    },
+    {
+      "id": "L6-04",
+      "lecture": 6,
+      "topic": "EA fundamentals",
+      "type": "fill",
+      "text": "An inherited encoding is a ____, whereas its realised solution is a phenotype.",
+      "answer": "genotype",
+      "explanation": "The genotype is varied and inherited; fitness evaluates the expressed solution.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 6-ES(I) - Copy (1).pdf",
+        "page": 14
+      },
+      "category": "original practice",
+      "marks": 2,
+      "difficulty": "core",
+      "options": [],
+      "hint": "The genotype is varied and inherited; fitness evaluates the expressed solution.",
+      "rubric": [],
+      "mistakes": "Distinguish the mechanism from the observed result. State assumptions and justify each claim."
+    },
+    {
+      "id": "L7-01",
+      "lecture": 7,
+      "topic": "Mutation",
+      "type": "numeric",
+      "text": "A 24-bit string uses independent per-bit mutation probability 0.05. How many bit flips are expected?",
+      "answer": 1.2,
+      "explanation": "E[flips] = 24 \u00d7 0.05 = 1.2; realised flips remain integers.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 7-ES(II) - Copy (1).pdf",
+        "page": 25
+      },
+      "category": "original practice",
+      "marks": 2,
+      "difficulty": "core",
+      "options": [],
+      "hint": "E[flips] = 24 \u00d7 0.",
+      "rubric": [],
+      "mistakes": "Distinguish the mechanism from the observed result. State assumptions and justify each claim."
+    },
+    {
+      "id": "L7-02",
+      "lecture": 7,
+      "topic": "Roulette selection",
+      "type": "numeric",
+      "text": "Fitnesses are 2, 3 and 5. What is the selection probability of the fitness-3 individual?",
+      "answer": 0.3,
+      "explanation": "3/(2+3+5) = 0.3.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 7-ES(II) - Copy (1).pdf",
+        "page": 22
+      },
+      "category": "original practice",
+      "marks": 2,
+      "difficulty": "core",
+      "options": [],
+      "hint": "3/(2+3+5) = 0.",
+      "rubric": [],
+      "mistakes": "Distinguish the mechanism from the observed result. State assumptions and justify each claim."
+    },
+    {
+      "id": "L7-03",
+      "lecture": 7,
+      "topic": "Crossover",
+      "type": "fill",
+      "text": "Cross 101|10 and 010|01. Give the child formed from the first prefix and second suffix.",
+      "answer": "10101",
+      "explanation": "Keep 101 and append 01. The other child is 01010.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 7-ES(II) - Copy (1).pdf",
+        "page": 24
+      },
+      "category": "original practice",
+      "marks": 2,
+      "difficulty": "core",
+      "options": [],
+      "hint": "Keep 101 and append 01.",
+      "rubric": [],
+      "mistakes": "Distinguish the mechanism from the observed result. State assumptions and justify each claim."
+    },
+    {
+      "id": "L7-04",
+      "lecture": 7,
+      "topic": "Survivor selection",
+      "type": "written",
+      "text": "Does full generational replacement mean there is no fitness-based selection?",
+      "answer": "No parent selection can still favour fitter genotypes; Full replacement concerns survivors; Without elitism the best parent need not survive",
+      "explanation": "Distinguish reproductive advantage from literal parental survival.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 7-ES(II) - Copy (1).pdf",
+        "page": 8
+      },
+      "category": "mock-inspired",
+      "marks": 3,
+      "difficulty": "core",
+      "options": [],
+      "hint": "Distinguish reproductive advantage from literal parental survival.",
+      "rubric": [
+        "No parent selection can still favour fitter genotypes",
+        "Full replacement concerns survivors",
+        "Without elitism the best parent need not survive"
+      ],
+      "mistakes": "Do not confuse fitness-biased reproduction with survival of the original parent. Full replacement and parent selection are separate stages."
+    },
+    {
+      "id": "L8-01",
+      "lecture": 8,
+      "topic": "Generation gap",
+      "type": "numeric",
+      "text": "A population of 80 has 4 members replaced per update. Calculate the generation gap.",
+      "answer": 0.05,
+      "explanation": "Generation gap = 4/80 = 0.05. This counts replacements, not parent draws.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 8-ES(III) - Copy (1).pdf",
+        "page": 28
+      },
+      "category": "mock-inspired",
+      "marks": 2,
+      "difficulty": "core",
+      "options": [],
+      "hint": "Generation gap = 4/80 = 0.",
+      "rubric": [],
+      "mistakes": "Distinguish the mechanism from the observed result. State assumptions and justify each claim."
+    },
+    {
+      "id": "L8-02",
+      "lecture": 8,
+      "topic": "Worked GA",
+      "type": "numeric",
+      "text": "The shown mutated strings decode to 28, 25, 27 and 18. Calculate mean fitness for f(x)=x\u00b2.",
+      "answer": 615.5,
+      "explanation": "(784+625+729+324)/4 = 615.5. Use the shown strings rather than inconsistent slide totals.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 8-ES(III) - Copy (1).pdf",
+        "page": 8
+      },
+      "category": "lecture-note-derived",
+      "marks": 2,
+      "difficulty": "core",
+      "options": [],
+      "hint": "(784+625+729+324)/4 = 615.",
+      "rubric": [],
+      "mistakes": "Distinguish the mechanism from the observed result. State assumptions and justify each claim.",
+      "supportingSource": {
+        "file": "2026-CSC4044Z(ALIFE)-Lecture%20Notes-Lecture%208.pdf",
+        "page": 3
+      }
+    },
+    {
+      "id": "L8-03",
+      "lecture": 8,
+      "topic": "Landscapes",
+      "type": "multiselect",
+      "text": "Which properties apply to the standard unscaled sphere function?",
+      "answer": [
+        "Separable",
+        "Unimodal",
+        "Convex",
+        "Well conditioned"
+      ],
+      "explanation": "The sphere is quadratic and smooth with its unique minimum at the origin.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 8-ES(III) - Copy (1).pdf",
+        "page": 14
+      },
+      "category": "slide question",
+      "marks": 2,
+      "difficulty": "core",
+      "options": [
+        "Separable",
+        "Unimodal",
+        "Convex",
+        "Well conditioned",
+        "Rugged"
+      ],
+      "hint": "The sphere is quadratic and smooth with its unique minimum at the origin.",
+      "rubric": [],
+      "mistakes": "Distinguish the mechanism from the observed result. State assumptions and justify each claim.",
+      "supportingSource": {
+        "file": "2026-CSC4044Z(ALIFE)-Lecture%20Notes-Lecture%208.pdf",
+        "page": 4
+      }
+    },
+    {
+      "id": "L8-04",
+      "lecture": 8,
+      "topic": "Crossover",
+      "type": "written",
+      "text": "Give a crossover method for n equal-length parents that always returns n valid children for unrestricted bit strings.",
+      "answer": "At each locus choose a permutation of the n parent indices; Give each child the bit from its assigned parent at that locus; Repeat for every locus; Children retain the original length and binary alphabet; Example parents 00 11 01 with first-locus identity and second-locus cyclic permutation give 01 11 00",
+      "explanation": "This original construction generalises uniform mixing. Validity here assumes unrestricted equal-length bit strings; constrained encodings may need repair.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 8-ES(III) - Copy (1).pdf",
+        "page": 24
+      },
+      "category": "mock-inspired",
+      "marks": 5,
+      "difficulty": "challenging",
+      "options": [],
+      "hint": "This original construction generalises uniform mixing.",
+      "rubric": [
+        "At each locus choose a permutation of the n parent indices",
+        "Give each child the bit from its assigned parent at that locus",
+        "Repeat for every locus",
+        "Children retain the original length and binary alphabet",
+        "Example parents 00 11 01 with first-locus identity and second-locus cyclic permutation give 01 11 00"
+      ],
+      "mistakes": "Do not promise validity for every constrained representation. Check child count, length, allele alphabet and representation-specific constraints; new combinations need not introduce new alleles."
+    },
+    {
+      "id": "L8-05",
+      "lecture": 8,
+      "topic": "Crossover",
+      "type": "truefalse",
+      "text": "Uniform crossover always inherits exactly half of each parent\u2019s bits.",
+      "answer": "False",
+      "explanation": "With p=0.5 the expected proportion is one-half; the realised fraction can differ.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 8-ES(III) - Copy (1).pdf",
+        "page": 24
+      },
+      "category": "lecture-note-derived",
+      "marks": 2,
+      "difficulty": "core",
+      "options": [],
+      "hint": "With p=0.",
+      "rubric": [],
+      "mistakes": "Distinguish the mechanism from the observed result. State assumptions and justify each claim.",
+      "supportingSource": {
+        "file": "2026-CSC4044Z(ALIFE)-Lecture%20Notes-Lecture%208.pdf",
+        "page": 6
+      }
+    },
+    {
+      "id": "L9-01",
+      "lecture": 9,
+      "topic": "Lecturer exam hint",
+      "type": "written",
+      "text": "As deterministic tournament size k increases, explain the expected changes in selection intensity, loss of diversity and selection variance. State assumptions.",
+      "answer": "For a fixed population larger tournaments increasingly favour fitter individuals so intensity generally rises; Lower ranks are less likely to be selected so more distinct genotypes are typically omitted; Selected fitness values concentrate near the top so normalised fitness variance generally decreases; These are tendencies and saturation limits not universal monotonic laws for arbitrary fitness distributions; Define sampling convention and distinguish fitness variance from repeated-draw sampling variance",
+      "explanation": "Recording 4 hint supplied by the user; relevant terminology is on Lecture 9 slides 11\u201315. It is a priority practice topic, not a guaranteed exam question.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 9-ES(IV) - Copy (2).pdf",
+        "page": 14
+      },
+      "category": "lecturer exam hint",
+      "marks": 5,
+      "difficulty": "challenging",
+      "options": [],
+      "hint": "Recording 4 hint supplied by the user; relevant terminology is on Lecture 9 slides 11\u201315.",
+      "rubric": [
+        "For a fixed population larger tournaments increasingly favour fitter individuals so intensity generally rises",
+        "Lower ranks are less likely to be selected so more distinct genotypes are typically omitted",
+        "Selected fitness values concentrate near the top so normalised fitness variance generally decreases",
+        "These are tendencies and saturation limits not universal monotonic laws for arbitrary fitness distributions",
+        "Define sampling convention and distinguish fitness variance from repeated-draw sampling variance"
+      ],
+      "mistakes": "Do not confuse normalised fitness variance after selection with variance of sampled copy counts. State with/without replacement and qualify trends rather than claiming a universal variance theorem."
+    },
+    {
+      "id": "L9-02",
+      "lecture": 9,
+      "topic": "Lecturer exam hint",
+      "type": "numeric",
+      "text": "N=6 distinct ranks, k=3, sampling independently with replacement. What is the best genotype\u2019s probability of winning? Give a decimal.",
+      "answer": 0.42129629629629617,
+      "explanation": "The best wins if it appears at least once: 1 \u2212 (5/6)\u00b3 = 91/216 \u2248 0.421296.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 9-ES(IV) - Copy (2).pdf",
+        "page": 11
+      },
+      "category": "lecturer exam hint",
+      "marks": 2,
+      "difficulty": "core",
+      "options": [],
+      "hint": "The best wins if it appears at least once: 1 \u2212 (5/6)\u00b3 = 91/216 \u2248 0.",
+      "rubric": [],
+      "mistakes": "Distinguish the mechanism from the observed result. State assumptions and justify each claim."
+    },
+    {
+      "id": "L9-03",
+      "lecture": 9,
+      "topic": "Lecturer exam hint",
+      "type": "numeric",
+      "text": "For N=6, k=3, sampling uniformly without replacement, what is the probability the best genotype wins?",
+      "answer": 0.5,
+      "explanation": "The best wins exactly when included. Its inclusion probability is k/N = 3/6.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 9-ES(IV) - Copy (2).pdf",
+        "page": 11
+      },
+      "category": "lecturer exam hint",
+      "marks": 2,
+      "difficulty": "core",
+      "options": [],
+      "hint": "The best wins exactly when included.",
+      "rubric": [],
+      "mistakes": "Distinguish the mechanism from the observed result. State assumptions and justify each claim."
+    },
+    {
+      "id": "L9-04",
+      "lecture": 9,
+      "topic": "Lecturer exam hint",
+      "type": "numeric",
+      "text": "Fitness values 1,2,3 are equally frequent. Original variance is 2/3. Selected fitness variance is 1/6. Calculate normalised selection variance.",
+      "answer": 0.25,
+      "explanation": "Selection variance = (1/6)/(2/3) = 1/4. This is fitness variance after selection normalised by before-selection variance.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 9-ES(IV) - Copy (2).pdf",
+        "page": 14
+      },
+      "category": "lecturer exam hint",
+      "marks": 2,
+      "difficulty": "core",
+      "options": [],
+      "hint": "Selection variance = (1/6)/(2/3) = 1/4.",
+      "rubric": [],
+      "mistakes": "Distinguish the mechanism from the observed result. State assumptions and justify each claim."
+    },
+    {
+      "id": "L9-05",
+      "lecture": 9,
+      "topic": "Linear ranking",
+      "type": "numeric",
+      "text": "N=6, n+=1.8, n\u2212=0.2, rank 6 is best. What is its linear ranking selection probability?",
+      "answer": 0.3,
+      "explanation": "For the best rank, p = n+/N = 1.8/6 = 0.3.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 9-ES(IV) - Copy (2).pdf",
+        "page": 6
+      },
+      "category": "mock-inspired",
+      "marks": 2,
+      "difficulty": "core",
+      "options": [],
+      "hint": "For the best rank, p = n+/N = 1.",
+      "rubric": [],
+      "mistakes": "Distinguish the mechanism from the observed result. State assumptions and justify each claim."
+    },
+    {
+      "id": "L9-06",
+      "lecture": 9,
+      "topic": "Tournament selection",
+      "type": "numeric",
+      "text": "With N=4 distinct ranks and k=2 independent draws with replacement, what is the winning probability of rank 2 (rank 1 worst)?",
+      "answer": 0.1875,
+      "explanation": "P(rank i wins) = (i/N)^k \u2212 ((i\u22121)/N)^k. Thus (2/4)\u00b2\u2212(1/4)\u00b2=3/16.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 9-ES(IV) - Copy (2).pdf",
+        "page": 11
+      },
+      "category": "mock-inspired",
+      "marks": 2,
+      "difficulty": "core",
+      "options": [],
+      "hint": "P(rank i wins) = (i/N)^k \u2212 ((i\u22121)/N)^k.",
+      "rubric": [],
+      "mistakes": "Distinguish the mechanism from the observed result. State assumptions and justify each claim."
+    },
+    {
+      "id": "L9-07",
+      "lecture": 9,
+      "topic": "Genetic drift",
+      "type": "written",
+      "text": "Distinguish genetic drift from fitness-based selection and propose a mitigation.",
+      "answer": "Drift is random change in genotype or allele frequencies due to finite sampling; It can remove diversity even among equally fit candidates; Increase population size or use diversity preservation such as niching; Explain how the intervention reduces accidental loss or maintains alternatives",
+      "explanation": "Drift is not the same as systematic preference for higher fitness. Mitigation is not a guarantee of elimination.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 9-ES(IV) - Copy (2).pdf",
+        "page": 14
+      },
+      "category": "mock-inspired",
+      "marks": 4,
+      "difficulty": "challenging",
+      "options": [],
+      "hint": "Drift is not the same as systematic preference for higher fitness.",
+      "rubric": [
+        "Drift is random change in genotype or allele frequencies due to finite sampling",
+        "It can remove diversity even among equally fit candidates",
+        "Increase population size or use diversity preservation such as niching",
+        "Explain how the intervention reduces accidental loss or maintains alternatives"
+      ],
+      "mistakes": "Do not define drift as systematic selection of fitter candidates. Random sampling can change frequencies even when all fitnesses are equal."
+    },
+    {
+      "id": "L10-01",
+      "lecture": 10,
+      "topic": "Coevolution",
+      "type": "truefalse",
+      "text": "In competitive co-evolution the fitness landscape is necessarily fixed.",
+      "answer": "False",
+      "explanation": "An opponent\u2019s adaptation changes the evaluation context and hence the effective landscape.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 10-Coevol - Copy (1).pdf",
+        "page": 11
+      },
+      "category": "original practice",
+      "marks": 2,
+      "difficulty": "core",
+      "options": [],
+      "hint": "An opponent\u2019s adaptation changes the evaluation context and hence the effective landscape.",
+      "rubric": [],
+      "mistakes": "Distinguish the mechanism from the observed result. State assumptions and justify each claim."
+    },
+    {
+      "id": "L10-02",
+      "lecture": 10,
+      "topic": "Robots and androids",
+      "type": "written",
+      "text": "Distinguish a robot from an android and explain when either could support hard ALIFE research.",
+      "answer": "A robot is a physical acting machine; An android has human form; Either can investigate life-like processes or behaviour; Appearance alone does not prove life or cognition",
+      "explanation": "Connect the research purpose to ALIFE rather than classifying every machine as alive.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 10-Coevol - Copy (1).pdf",
+        "page": 19
+      },
+      "category": "mock-inspired",
+      "marks": 4,
+      "difficulty": "challenging",
+      "options": [],
+      "hint": "Connect the research purpose to ALIFE rather than classifying every machine as alive.",
+      "rubric": [
+        "A robot is a physical acting machine",
+        "An android has human form",
+        "Either can investigate life-like processes or behaviour",
+        "Appearance alone does not prove life or cognition"
+      ],
+      "mistakes": "Do not treat every robot as an android, or human shape as proof of life or cognition. Explain the life-process research purpose."
+    },
+    {
+      "id": "L10-03",
+      "lecture": 10,
+      "topic": "Coevolution",
+      "type": "mcq",
+      "text": "What makes Sims\u2019 representation especially relevant to body\u2013controller co-design?",
+      "answer": "A graph encodes body structure and associated control",
+      "explanation": "Variation can change both morphology and the neural control structure.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 10-Coevol - Copy (1).pdf",
+        "page": 3
+      },
+      "category": "original practice",
+      "marks": 2,
+      "difficulty": "core",
+      "options": [
+        "A graph encodes body structure and associated control",
+        "Every creature has a fixed human body",
+        "Fitness never depends on an opponent",
+        "Only one scalar can mutate"
+      ],
+      "hint": "Variation can change both morphology and the neural control structure.",
+      "rubric": [],
+      "mistakes": "Distinguish the mechanism from the observed result. State assumptions and justify each claim."
+    },
+    {
+      "id": "L10-04",
+      "lecture": 10,
+      "topic": "Coevolution",
+      "type": "written",
+      "text": "Explain the Red Queen effect and give a useful evaluation precaution.",
+      "answer": "Opponents continually co-adapt; Relative success can remain unchanged despite adaptation; Evaluate against archived or standard opponents as well as current ones",
+      "explanation": "A flat relative score does not necessarily indicate an absence of evolution.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 10-Coevol - Copy (1).pdf",
+        "page": 11
+      },
+      "category": "original practice",
+      "marks": 3,
+      "difficulty": "core",
+      "options": [],
+      "hint": "A flat relative score does not necessarily indicate an absence of evolution.",
+      "rubric": [
+        "Opponents continually co-adapt",
+        "Relative success can remain unchanged despite adaptation",
+        "Evaluate against archived or standard opponents as well as current ones"
+      ],
+      "mistakes": "Do not assume fitness is an absolute, unchanging score. A current win can reflect opponent specialisation rather than general improvement."
+    },
+    {
+      "id": "L11-01",
+      "lecture": 11,
+      "topic": "Morphological computation",
+      "type": "written",
+      "text": "Explain how body mechanics can simplify robotic control and why this does not make cognition necessary for all life-like behaviour.",
+      "answer": "Physical properties can stabilise or coordinate movement; This reduces explicit controller computation; Reactive or passive mechanisms can create life-like movement without deliberation",
+      "explanation": "A mechanism is not a universal prerequisite.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 11-ROB - Copy.pdf",
+        "page": 8
+      },
+      "category": "mock-inspired",
+      "marks": 3,
+      "difficulty": "core",
+      "options": [],
+      "hint": "A mechanism is not a universal prerequisite.",
+      "rubric": [
+        "Physical properties can stabilise or coordinate movement",
+        "This reduces explicit controller computation",
+        "Reactive or passive mechanisms can create life-like movement without deliberation"
+      ],
+      "mistakes": "Do not equate physical simplification of control with conscious reasoning, or claim morphological computation is necessary for every lifelike robot."
+    },
+    {
+      "id": "L11-02",
+      "lecture": 11,
+      "topic": "Uncanny valley",
+      "type": "written",
+      "text": "Design an experiment that separates anomaly recognition from appearance\u2013motion conflict as explanations for uncanny responses.",
+      "answer": "Manipulate anomalous versus consistent facial features; Independently manipulate natural versus unnatural motion; Compare conditions with otherwise matched stimuli; Measure eeriness or affinity and counterbalance order; Predict a feature effect for anomalies versus a mismatch effect for conflicting cues",
+      "explanation": "Original mock-inspired design: credit manipulations, controls, measurement and distinguishable predictions. It is not a lecturer-supplied marking memo.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 11-ROB - Copy.pdf",
+        "page": 30
+      },
+      "category": "mock-inspired",
+      "marks": 5,
+      "difficulty": "challenging",
+      "options": [],
+      "hint": "Original mock-inspired design: credit manipulations, controls, measurement and distinguishable predictions.",
+      "rubric": [
+        "Manipulate anomalous versus consistent facial features",
+        "Independently manipulate natural versus unnatural motion",
+        "Compare conditions with otherwise matched stimuli",
+        "Measure eeriness or affinity and counterbalance order",
+        "Predict a feature effect for anomalies versus a mismatch effect for conflicting cues"
+      ],
+      "mistakes": "Do not manipulate appearance and movement together without comparison conditions. A single disliked android does not establish a valley; specify measures, controls and competing predictions."
+    },
+    {
+      "id": "L11-03",
+      "lecture": 11,
+      "topic": "Uncanny valley",
+      "type": "mcq",
+      "text": "Which condition most directly tests perceptual tension?",
+      "answer": "Human-like appearance paired with mechanical motion",
+      "explanation": "The hypothesis concerns conflicting perceptual cues.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 11-ROB - Copy.pdf",
+        "page": 30
+      },
+      "category": "original practice",
+      "marks": 2,
+      "difficulty": "core",
+      "options": [
+        "Human-like appearance paired with mechanical motion",
+        "A longer battery life",
+        "More training data",
+        "A larger robot population"
+      ],
+      "hint": "The hypothesis concerns conflicting perceptual cues.",
+      "rubric": [],
+      "mistakes": "Distinguish the mechanism from the observed result. State assumptions and justify each claim."
+    },
+    {
+      "id": "L11-04",
+      "lecture": 11,
+      "topic": "Morphological computation",
+      "type": "truefalse",
+      "text": "Every life-like robot must use morphological computation.",
+      "answer": "False",
+      "explanation": "Morphology can simplify control, but life-like behaviour can also be produced by other mechanisms.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 11-ROB - Copy.pdf",
+        "page": 8
+      },
+      "category": "mock-inspired",
+      "marks": 2,
+      "difficulty": "core",
+      "options": [],
+      "hint": "Morphology can simplify control, but life-like behaviour can also be produced by other mechanisms.",
+      "rubric": [],
+      "mistakes": "Distinguish the mechanism from the observed result. State assumptions and justify each claim."
+    },
+    {
+      "id": "L12-01",
+      "lecture": 12,
+      "topic": "Field study methods",
+      "type": "written",
+      "text": "Explain a limitation of evaluating only people who agree to interviews in an android field study.",
+      "answer": "Agreement may correlate with attitudes or comfort around robots; The analysed sample can therefore be systematically unrepresentative; Report recruitment and compare inclusion patterns where possible",
+      "explanation": "This is selection bias, not merely a small sample.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 12-ROB.pdf",
+        "page": 13
+      },
+      "category": "slide question",
+      "marks": 3,
+      "difficulty": "core",
+      "options": [],
+      "hint": "This is selection bias, not merely a small sample.",
+      "rubric": [
+        "Agreement may correlate with attitudes or comfort around robots",
+        "The analysed sample can therefore be systematically unrepresentative",
+        "Report recruitment and compare inclusion patterns where possible"
+      ],
+      "mistakes": "Do not assume interview volunteers represent all passers-by. Distinguish selection bias from random sampling uncertainty and ecological validity from experimental control."
+    },
+    {
+      "id": "L12-02",
+      "lecture": 12,
+      "topic": "Field study methods",
+      "type": "truefalse",
+      "text": "An unscripted field encounter gives the same experimental control as a randomised laboratory study.",
+      "answer": "False",
+      "explanation": "Real-world context increases ecological relevance but introduces uncontrolled differences.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 12-ROB.pdf",
+        "page": 5
+      },
+      "category": "original practice",
+      "marks": 2,
+      "difficulty": "core",
+      "options": [],
+      "hint": "Real-world context increases ecological relevance but introduces uncontrolled differences.",
+      "rubric": [],
+      "mistakes": "Distinguish the mechanism from the observed result. State assumptions and justify each claim."
+    },
+    {
+      "id": "L1-06",
+      "lecture": 1,
+      "topic": "Digital evolution",
+      "type": "written",
+      "text": "Why can a Tierra parasite gain a short-term advantage without an all-parasite population being viable?",
+      "answer": "It exploits replication machinery supplied by hosts; Avoiding its own machinery can reduce its reproductive cost; Without suitable hosts its replication opportunity disappears",
+      "explanation": "The ecology makes fitness context dependent; individual reproductive advantage does not imply population viability.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 1-Introduction - Copy (2).pdf",
+        "page": 33
+      },
+      "category": "lecture-note-derived",
+      "marks": 3,
+      "difficulty": "core",
+      "options": [],
+      "hint": "Identify the mechanism and distinguish it from the observed outcome.",
+      "rubric": [
+        "It exploits replication machinery supplied by hosts",
+        "Avoiding its own machinery can reduce its reproductive cost",
+        "Without suitable hosts its replication opportunity disappears"
+      ],
+      "mistakes": "Runtime alone does not establish open-ended evolution. For parasites, distinguish individual advantage from dependence on host resources."
+    },
+    {
+      "id": "L3-06",
+      "lecture": 3,
+      "topic": "Braitenberg vehicles",
+      "type": "written",
+      "text": "Two symmetric light sensors give equal readings. What do symmetric motor connections predict, and how could a controller escape a head-on situation?",
+      "answer": "Equal symmetric inputs produce equal motor commands; There is no turning bias; Add asymmetry noise memory or an explicit avoidance rule",
+      "explanation": "This is a boundary case of the sense\u2013act mapping, not evidence of intention.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 3-Introduction(II) - Copy (1).pdf",
+        "page": 31
+      },
+      "category": "lecture-note-derived",
+      "marks": 3,
+      "difficulty": "core",
+      "options": [],
+      "hint": "Identify the mechanism and distinguish it from the observed outcome.",
+      "rubric": [
+        "Equal symmetric inputs produce equal motor commands",
+        "There is no turning bias",
+        "Add asymmetry noise memory or an explicit avoidance rule"
+      ],
+      "mistakes": "Do not infer emotions or deliberation from observer descriptions. Specify the sensor\u2013motor mapping and address symmetry when input readings are equal."
+    },
+    {
+      "id": "L4-06",
+      "lecture": 4,
+      "topic": "Cybernetic wasteland",
+      "type": "written",
+      "text": "Why might a society model of entirely utility-maximising agents become a cybernetic wasteland, and could a similar concern apply to android research?",
+      "answer": "It can omit emotion psychology personality and social motivations; Plausible collective patterns need not explain human decisions; An android can likewise appear human while lacking the mechanisms being attributed to it; Relevance depends on the research question and required explanatory fidelity",
+      "explanation": "The extension to androids is original mock-inspired reasoning, not a claim that every robot needs human psychology.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 4-ABMs - Copy.pdf",
+        "page": 41
+      },
+      "category": "mock-inspired",
+      "marks": 4,
+      "difficulty": "core",
+      "options": [],
+      "hint": "Identify the mechanism and distinguish it from the observed outcome.",
+      "rubric": [
+        "It can omit emotion psychology personality and social motivations",
+        "Plausible collective patterns need not explain human decisions",
+        "An android can likewise appear human while lacking the mechanisms being attributed to it",
+        "Relevance depends on the research question and required explanatory fidelity"
+      ],
+      "mistakes": "Do not use this merely as a synonym for a boring model. The course critique specifically concerns agents lacking personality, emotion and psychology."
+    },
+    {
+      "id": "L5-05",
+      "lecture": 5,
+      "topic": "Schelling",
+      "type": "written",
+      "text": "Does a stable Schelling configuration necessarily imply strong segregation? Explain what you would measure.",
+      "answer": "Stability means no agent needs or makes a move under the rule; Segregation concerns spatial clustering by group; Measure local similarity or clustering as well as satisfaction and movement",
+      "explanation": "A mixed configuration can be stable at low preferences. Separate dynamical and spatial outcomes.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 5-ABMs(II) - Copy (2).pdf",
+        "page": 17
+      },
+      "category": "lecture-note-derived",
+      "marks": 3,
+      "difficulty": "core",
+      "options": [],
+      "hint": "Identify the mechanism and distinguish it from the observed outcome.",
+      "rubric": [
+        "Stability means no agent needs or makes a move under the rule",
+        "Segregation concerns spatial clustering by group",
+        "Measure local similarity or clustering as well as satisfaction and movement"
+      ],
+      "mistakes": "Do not count empty cells as other-group agents. High satisfaction is not the same measurement as clustering, and the illustrative one-third threshold is not universal."
+    },
+    {
+      "id": "L7-05",
+      "lecture": 7,
+      "topic": "EA fundamentals",
+      "type": "written",
+      "text": "In what sense is an EA an anytime algorithm, and what additional mechanism preserves the best result found?",
+      "answer": "It can report its best available candidate when interrupted; More computation provides further search opportunities without guaranteeing a better candidate each generation; An external best-so-far archive or elitism retains the best discovered result",
+      "explanation": "Distinguish best current population member from best ever evaluated candidate.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 7-ES(II) - Copy (1).pdf",
+        "page": 13
+      },
+      "category": "slide question",
+      "marks": 3,
+      "difficulty": "core",
+      "options": [],
+      "hint": "Identify the mechanism and distinguish it from the observed outcome.",
+      "rubric": [
+        "It can report its best available candidate when interrupted",
+        "More computation provides further search opportunities without guaranteeing a better candidate each generation",
+        "An external best-so-far archive or elitism retains the best discovered result"
+      ],
+      "mistakes": "Do not promise a finite-time global optimum. Separate a nonzero chance of reaching an optimum from retaining it, and separate best current from best-ever fitness."
+    },
+    {
+      "id": "L8-06",
+      "lecture": 8,
+      "topic": "Landscapes",
+      "type": "written",
+      "text": "Why is nonlinear an insufficient reason to call a function rugged or a good target for an EA? Use the sphere as a counterexample.",
+      "answer": "The sphere is nonlinear but smooth convex and quadratic; Its variables are separable and its optimum is at the origin; Specialised methods can exploit this structure more efficiently; Choose an EA based on problem properties rather than a nonlinear label",
+      "explanation": "This converts the sphere slide\u2019s checklist into a reasoning question; no general EA superiority is claimed.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 8-ES(III) - Copy (1).pdf",
+        "page": 14
+      },
+      "category": "slide question",
+      "marks": 4,
+      "difficulty": "core",
+      "options": [],
+      "hint": "Identify the mechanism and distinguish it from the observed outcome.",
+      "rubric": [
+        "The sphere is nonlinear but smooth convex and quadratic",
+        "Its variables are separable and its optimum is at the origin",
+        "Specialised methods can exploit this structure more efficiently",
+        "Choose an EA based on problem properties rather than a nonlinear label"
+      ],
+      "mistakes": "Do not label every nonlinear function rugged or non-convex. The standard sphere is nonlinear, smooth, quadratic, separable and unimodal."
+    },
+    {
+      "id": "L11-05",
+      "lecture": 11,
+      "topic": "Uncanny valley",
+      "type": "written",
+      "text": "Why does a negative reaction to one almost-human android not establish a universal uncanny valley?",
+      "answer": "Reactions vary across people stimuli tasks and context; A valley requires comparisons across degrees or configurations of human likeness; Appearance and movement should be separated and competing explanations tested",
+      "explanation": "The slide raises unanswered questions. A single observation cannot establish the full proposed relationship.",
+      "source": {
+        "file": "2026-CSC4044Z-Lecture 11-ROB - Copy.pdf",
+        "page": 31
+      },
+      "category": "slide question",
+      "marks": 3,
+      "difficulty": "core",
+      "options": [],
+      "hint": "Identify the mechanism and distinguish it from the observed outcome.",
+      "rubric": [
+        "Reactions vary across people stimuli tasks and context",
+        "A valley requires comparisons across degrees or configurations of human likeness",
+        "Appearance and movement should be separated and competing explanations tested"
+      ],
+      "mistakes": "Do not manipulate appearance and movement together without comparison conditions. A single disliked android does not establish a valley; specify measures, controls and competing predictions."
+    }
+  ]
+}
